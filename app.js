@@ -26,6 +26,12 @@ import { RecaptchaVerifier, auth, signInWithPhoneNumber } from "./firbase.js";
             }).catch((error) => {
               // Error; SMS not sent
               console.log(error.message)
+              grecaptcha.reset(window.recaptchaWidgetId);
+
+// Or, if you haven't stored the widget ID:
+window.recaptchaVerifier.render().then(function(widgetId) {
+  grecaptcha.reset(widgetId);
+});
               // ...
             });
         
