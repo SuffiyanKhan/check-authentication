@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase Phone Authentication</title>
+    
+    <!-- <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script> -->
+</head>
+
+<body>
+    <h2>Phone Authentication</h2>
+    <div>
+        <label for="phone-number">Phone Number:</label>
+        <input type="text" id="phone-number" placeholder="+1234567890">
+        <button id="send-code">Send Verification Code</button>
+    </div>
+    <div>
+        <label for="verification-code">Verification Code:</label>
+        <input type="text" id="verification-code" placeholder="Enter code">
+        <button id="verify-code">Verify Code</button>
+    </div>
+    <script type="module" src="app.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js"></script> -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js"></script> -->
+    
+</body>
+
+</html>
